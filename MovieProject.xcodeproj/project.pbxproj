@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1822848F296FD600000CD733 /* Popular.json in Resources */ = {isa = PBXBuildFile; fileRef = 1822848E296FD600000CD733 /* Popular.json */; };
+		18228491296FD6F2000CD733 /* NoPlaying.json in Resources */ = {isa = PBXBuildFile; fileRef = 18228490296FD6F2000CD733 /* NoPlaying.json */; };
+		18228493296FD701000CD733 /* MoviesDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 18228492296FD700000CD733 /* MoviesDetail.json */; };
 		18888090296F2F5B00E6C405 /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888808F296F2F5B00E6C405 /* MovieTests.swift */; };
 		188880DA296F2F9100E6C405 /* PlayingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188880AA296F2F8E00E6C405 /* PlayingCollectionViewCell.xib */; };
 		188880DB296F2F9100E6C405 /* PlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188880AB296F2F8E00E6C405 /* PlayingCollectionViewCell.swift */; };
@@ -63,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1822848E296FD600000CD733 /* Popular.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Popular.json; sourceTree = "<group>"; };
+		18228490296FD6F2000CD733 /* NoPlaying.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NoPlaying.json; sourceTree = "<group>"; };
+		18228492296FD700000CD733 /* MoviesDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MoviesDetail.json; sourceTree = "<group>"; };
 		18888075296F2F5800E6C405 /* MovieProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18888086296F2F5B00E6C405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1888808B296F2F5B00E6C405 /* MovieProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +136,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1822848B296FD498000CD733 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				18228492296FD700000CD733 /* MoviesDetail.json */,
+				18228490296FD6F2000CD733 /* NoPlaying.json */,
+				1822848E296FD600000CD733 /* Popular.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		1888806C296F2F5800E6C405 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +181,7 @@
 		1888808E296F2F5B00E6C405 /* MovieProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				1822848B296FD498000CD733 /* JSON */,
 				18888109296F340100E6C405 /* Mocks */,
 				1888808F296F2F5B00E6C405 /* MovieTests.swift */,
 			);
@@ -469,6 +486,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1822848F296FD600000CD733 /* Popular.json in Resources */,
+				18228493296FD701000CD733 /* MoviesDetail.json in Resources */,
+				18228491296FD6F2000CD733 /* NoPlaying.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
