@@ -34,7 +34,7 @@ final class MoviesDetailViewController: UIViewController {
         viewModel.moviesDetailAPI {
             self.reloadCollectionView()
         } failure: { error in
-            print(error.debugDescription)
+            self.showAlert(message: error.debugDescription)
         }
     }
     

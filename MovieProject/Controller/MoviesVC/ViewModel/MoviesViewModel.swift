@@ -55,7 +55,6 @@ final class MoviesViewModel: MoviesViewModelMethods {
                     self.arrayPopular.removeAll()
                 }
                 self.arrayPopular.append(contentsOf: resultValue.results ?? [])
-                print(resultValue)
                 completion()
             }
             
@@ -82,7 +81,6 @@ final class MoviesViewModel: MoviesViewModelMethods {
                     self.arrayNowPlaying.removeAll()
                 }
                 self.arrayNowPlaying.append(contentsOf: resultValue.results ?? [])
-                print(resultValue)
                 completion()
             }
             

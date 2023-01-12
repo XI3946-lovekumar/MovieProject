@@ -24,7 +24,7 @@ extension UIViewController {
         return completeString.count <= maxLength
     }
     
-    func showAlert(_ alert: String, message: String) {
+    func showAlert(_ alert: String = Key.Constants.appName.rawValue, message: String) {
         let alert = UIAlertController.init(title: alert, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction.init(title: "Ok", style: .cancel))
         self.present(alert, animated: true)

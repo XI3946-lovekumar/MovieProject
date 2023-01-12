@@ -53,10 +53,7 @@ final class APIManager: HTTPClientProtocol {
                    parameters: params,
                    encoding: type.encoding,
                    headers: type.headers).validate().responseJSON { data in
-            
-            print("data.response?.url")
-            print(data.response?.url)
-            
+                        
             switch data.result {
             case .success(_):
                 let decoder = JSONDecoder()
