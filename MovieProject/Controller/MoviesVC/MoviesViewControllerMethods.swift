@@ -56,6 +56,11 @@ extension MoviesViewController: TableViewCellDelegate {
             self.getNowPlayingAPI()
         }
     }
+    
+    func collectionView(didSelectItemAt indexPath: IndexPath, tableCellIndexValue: IndexPath) {
+        let movieId = self.viewModel.arrayNowPlaying[indexPath.row].id ?? 0
+        presentMoviesDetail(movieId)
+    }
 }
 
 // MARK: - UICollectionViewDelegate

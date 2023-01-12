@@ -29,6 +29,7 @@ extension TableViewCell: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 extension TableViewCell: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegates?.collectionView(didSelectItemAt: indexPath, tableCellIndexValue: self.tableIndexPath)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {

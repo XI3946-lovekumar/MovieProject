@@ -19,6 +19,8 @@
 		1837E7EA296FFD20005C4750 /* MoviesDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837E7E9296FFD20005C4750 /* MoviesDetailScreen.swift */; };
 		1837E7EC29700030005C4750 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1837E7EB29700030005C4750 /* README.md */; };
 		1837E7ED29700030005C4750 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1837E7EB29700030005C4750 /* README.md */; };
+		1837E7EF2970043E005C4750 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837E7EE2970043E005C4750 /* CircularProgressBarView.swift */; };
+		1837E7F02970043E005C4750 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837E7EE2970043E005C4750 /* CircularProgressBarView.swift */; };
 		18888090296F2F5B00E6C405 /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1888808F296F2F5B00E6C405 /* MovieTests.swift */; };
 		188880DA296F2F9100E6C405 /* PlayingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188880AA296F2F8E00E6C405 /* PlayingCollectionViewCell.xib */; };
 		188880DB296F2F9100E6C405 /* PlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188880AB296F2F8E00E6C405 /* PlayingCollectionViewCell.swift */; };
@@ -73,6 +75,7 @@
 		1837E7E0296FF3B4005C4750 /* Popular.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Popular.json; path = MovieProjectTests/JSON/Popular.json; sourceTree = SOURCE_ROOT; };
 		1837E7E9296FFD20005C4750 /* MoviesDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailScreen.swift; sourceTree = "<group>"; };
 		1837E7EB29700030005C4750 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1837E7EE2970043E005C4750 /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		18888075296F2F5800E6C405 /* MovieProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18888086296F2F5B00E6C405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1888808B296F2F5B00E6C405 /* MovieProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -357,6 +360,7 @@
 				188880D4296F2F9000E6C405 /* Extensions.swift */,
 				188880D5296F2F9000E6C405 /* KeyConstants.swift */,
 				188880D6296F2F9000E6C405 /* API */,
+				1837E7EE2970043E005C4750 /* CircularProgressBarView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -520,6 +524,7 @@
 				188880E9296F2F9100E6C405 /* SceneDelegate.swift in Sources */,
 				188880F4296F2F9100E6C405 /* Extensions.swift in Sources */,
 				188880ED296F2F9100E6C405 /* MoviesDetailViewController.swift in Sources */,
+				1837E7EF2970043E005C4750 /* CircularProgressBarView.swift in Sources */,
 				188880E2296F2F9100E6C405 /* TableViewCellMethods.swift in Sources */,
 				188880E6296F2F9100E6C405 /* MostPopularTableViewCell.swift in Sources */,
 				188880F7296F2F9100E6C405 /* ReachabilityManager.swift in Sources */,
@@ -542,6 +547,7 @@
 			files = (
 				18888090296F2F5B00E6C405 /* MovieTests.swift in Sources */,
 				1837E7EA296FFD20005C4750 /* MoviesDetailScreen.swift in Sources */,
+				1837E7F02970043E005C4750 /* CircularProgressBarView.swift in Sources */,
 				1888810B296F341E00E6C405 /* MockServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

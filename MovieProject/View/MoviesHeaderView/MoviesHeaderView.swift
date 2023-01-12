@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MoviesHeaderView: UITableViewHeaderFooterView {
+final class MoviesHeaderView: UITableViewHeaderFooterView {
     ///@IBOutlet
     @IBOutlet weak var headerTitleLabel: UILabel!
 }

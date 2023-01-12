@@ -8,10 +8,11 @@
 import UIKit
 
 final class MoviesDetailViewController: UIViewController {
-
+    ///IBOutlet
+    @IBOutlet weak var collectionView: UICollectionView!
+    ///Varriables
     var headerSize = UIScreen.main.bounds.size
     let viewModel = MoviesDetailViewModel()
-    @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,7 @@ final class MoviesDetailViewController: UIViewController {
     
     private func reloadCollectionView() {
         self.collectionView.reloadData()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             self.collectionView.collectionViewLayout.invalidateLayout()
         }
     }

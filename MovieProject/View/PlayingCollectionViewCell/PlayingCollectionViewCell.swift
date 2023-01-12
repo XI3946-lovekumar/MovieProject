@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 
-class PlayingCollectionViewCell: UICollectionViewCell {
+final class PlayingCollectionViewCell: UICollectionViewCell {
     /// IBOutlet
     @IBOutlet weak var imageView: UIImageView!
     

@@ -42,7 +42,7 @@ final class MoviesViewController: UIViewController {
         viewModel.nowPlayingAPI {
             self.tableView.reloadData()
         } failure: { error in
-            self.showAlert(message: error.debugDescription ?? "")
+            self.showAlert(message: error.debugDescription)
         }
     }
     

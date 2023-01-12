@@ -5,13 +5,12 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MostPopularTableViewCell" rowHeight="127" id="KGk-i7-Jjw" customClass="MostPopularTableViewCell" customModule="MoviesProject" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MostPopularTableViewCell" rowHeight="127" id="KGk-i7-Jjw" customClass="MostPopularTableViewCell" customModule="MovieProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="627" height="130"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -25,7 +24,7 @@
                                 <rect key="frame" x="20" y="15" width="90" height="90"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="5ek-Zu-UE0"/>
+                                    <constraint firstAttribute="height" priority="250" constant="90" id="5ek-Zu-UE0"/>
                                     <constraint firstAttribute="width" secondItem="AHU-tz-jGb" secondAttribute="height" multiplier="1:1" id="VmF-aH-mKe"/>
                                 </constraints>
                             </imageView>
@@ -35,9 +34,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baX-5q-VM3">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baX-5q-VM3" customClass="CircularProgressView" customModule="MovieProject" customModuleProvider="target">
                                 <rect key="frame" x="537" y="30" width="60" height="60"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="dSs-l4-KfH"/>
                                     <constraint firstAttribute="height" constant="60" id="kde-T3-UpP"/>
@@ -88,7 +87,7 @@
             <connections>
                 <outlet property="dateLabel" destination="l4c-cc-x8e" id="c4t-ta-SaI"/>
                 <outlet property="itemImageView" destination="AHU-tz-jGb" id="ZDw-Ml-Eyl"/>
-                <outlet property="progressView" destination="baX-5q-VM3" id="2DG-Wr-Pc1"/>
+                <outlet property="progressView" destination="baX-5q-VM3" id="Yhc-mB-qol"/>
                 <outlet property="titleLabel" destination="Fv4-tS-uz8" id="Map-am-DMX"/>
             </connections>
             <point key="canvasLocation" x="371.53846153846155" y="27.369668246445496"/>
@@ -96,8 +95,5 @@
     </objects>
     <resources>
         <image name="posterPlaceholder" width="100" height="100"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

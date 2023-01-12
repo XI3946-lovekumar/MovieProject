@@ -9,9 +9,10 @@ import UIKit
 
 protocol TableViewCellDelegate {
     func collectionView(willDisplayForItemAt indexPath: IndexPath, tableCellIndexValue: IndexPath)
+    func collectionView(didSelectItemAt indexPath: IndexPath, tableCellIndexValue: IndexPath)
 }
 
-class TableViewCell: UITableViewCell {
+final class TableViewCell: UITableViewCell {
     ///IBOutlet
     @IBOutlet weak var collectionView: UICollectionView!
     
